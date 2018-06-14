@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >   
+ <form-bean name="passinfoForm" type="form.UpForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >   
+    
+    
+    
+    <action
+      attribute="passinfoForm"
+      input="/web/index.jsp"
+      name="passinfoForm"
+      parameter="action"
+      path="/sys"
+      scope="request"
+      type="action.SysAction">
+      <forward name="index" path="/pages/index.jsp" ></forward>
+      <forward name="login" path="/pages/login.jsp" ></forward>
+      <forward name="addsysusersuc" path="/pages/addsysuser.jsp" ></forward>
+	  <forward name="upsysusersuc" path="/pages/upsysuser.jsp" ></forward>
+	  <forward name="addteachersuc" path="/pages/addteacher.jsp" ></forward>
+	  <forward name="addbjsuc" path="/pages/addbj.jsp" ></forward>
+	  
+	  <forward name="addstudentsuc" path="/pages/x-addstudent.jsp" ></forward>
+	  <forward name="upstudentsuc" path="/pages/x-upstudent.jsp" ></forward>
+	  
+	  <forward name="addzysuc" path="/pages/x-addzy.jsp" ></forward>
+	  <forward name="upzysuc" path="/pages/x-upzy.jsp" ></forward>
+	  <forward name="upzysuc" path="/pages/x-upzy.jsp" ></forward>
+	  <forward name="answerfbsuc" path="/pages/answerfb.jsp" ></forward>
+	  
+	  
+	  <forward name="uploadzysuc" path="/pages/uploadzy.jsp" ></forward>
+	  <forward name="uppfsuc" path="/pages/x-pf.jsp" ></forward>
+	  <forward name="zypfsuc" path="/pages/zypf.jsp" ></forward>
+	  
+	  <forward name="sqsuc" path="/pages/persons.jsp" ></forward>
+	  <forward name="updatesysusers" path="/pages/updatesysusers.jsp" ></forward>
+	   <forward name="zpsuc" path="/pages/zp.jsp" ></forward>
+	  
+	  <forward name="upsysuserpwdsuc" path="/pages/uppass.jsp" ></forward>
+	  <forward name="khsuc" path="/pages/kh.jsp" ></forward>
+	  <forward name="delkhsuc" path="/pages/khlist.jsp" ></forward>
+	  <forward name="addpxsuc" path="/pages/addpx.jsp" ></forward>
+	  <forward name="uppxsuc" path="/pages/uppx.jsp" ></forward>
+	  <forward name="upuserpwdsuc" path="/pages/upuserpwd.jsp" ></forward>
+	  
+	  <forward name="tupuserpwdsuc" path="/pages/teacherupuser.jsp" ></forward>
+	  <forward name="supuserpwdsuc" path="/pages/stuupuser.jsp" ></forward>
+	  
+	  <forward name="addtyrysuc" path="/pages/tyry.jsp" ></forward>
+	  <forward name="addtjsuc" path="/pages/uptj.jsp" ></forward>
+	  <forward name="addrmsuc" path="/pages/addrm.jsp" ></forward>
+	  <forward name="addfasuc" path="/pages/addfa.jsp" ></forward>
+	  <forward name="zzkc" path="/pages/zzkc.jsp" ></forward>
+	  <forward name="dwkc" path="/pages/dwkc.jsp" ></forward>
+	  <forward name="jg" path="/pages/jggs.jsp" ></forward>
+	  <forward name="addxxtjsuc" path="/pages/addxxtj.jsp" ></forward>
+	  
+	  <forward name="upxxtysuc" path="/pages/upxxty.jsp" ></forward>
+	  
+	  <forward name="addwjsuc" path="/pages/addwj.jsp" ></forward>
+	  
+	  <forward name="addnotice" path="/pages/addnotice.jsp" ></forward>
+	  
+	  <forward name="addksnotice" path="/pages/addksnotice.jsp" ></forward>
+	  
+	  <forward name="qdkc" path="/pages/qdkc.jsp" ></forward>
+	  
+	  <forward name="addkc" path="/pages/x-addkc.jsp" ></forward>
+	  
+	  
+    </action> 
+
+    
+
+                    
+  </action-mappings>
+  <message-resources parameter="" />
+</struts-config>
